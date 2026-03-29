@@ -24,7 +24,20 @@ const tabs = [
     label: "Data Centers & Telecom",
     icon: Server,
     intro: "La continuité de service est une exigence absolue. Clean Air déploie des solutions de climatisation de précision et de continuité d'alimentation avec Vertiv.",
-    groups: [{ title: "Clients", clients: ["Références en cours de compilation"] }],
+    groups: [
+      {
+        title: "Telecom & Broadcasting",
+        clients: ["Ooredoo", "Orange Tunisie", "Tunisie Telecom", "ERTT", "Parc Telecom", "Planet", "3S - Globalnet", "Telnet", "ASBU", "LTC - Quinta Communication", "Radio Régionale de Tataouine"],
+      },
+      {
+        title: "Banques, Conservation & Assurances",
+        clients: ["Banque Africaine de Développement", "Arab Tunisian Bank ATB", "Banque de Tunisie", "Attijari Bank", "Banque Maghrebine", "BIAT", "Banque Centrale de Tunisie", "Banque Zitouna", "BNA", "UBCI", "BTE", "QNB", "Tunisie Valeur", "Conservation Foncière de Béja", "Conservation Foncière de Bizerte", "Conservation Foncière de Sfax", "CNSS", "COMAR", "Assurance Selim", "AMI Assurances", "GAT Assurance"],
+      },
+      {
+        title: "Data Centers & Infrastructures critiques",
+        clients: ["Bibliothèque Nationale", "Centre de Tri Postale", "Cité de la Culture", "Centre National de l'Informatique CNI", "Teleperformance", "Bosch LAAT", "Régie Nationale des Tabacs", "ST Microelectronic", "Monetique", "Tunisie Leasing", "Faurecia", "Areva Sud", "Areva Nord", "Centre d'Appel Stream", "Centre Informatique Ministère des Finances", "Centre Informatique Ministère de la Santé", "STEG", "Ministère de l'Intérieur", "Chambres des Députés", "Musée du Bardo", "Musée de Djerba", "La Cinémathèque", "CERT", "Aviation Training Center of Tunisia", "Usine Valeo", "Usine Lilas", "SFBT", "CIPI Actia", "Delice", "Focus", "Colas Rail", "Laboratoire Pharmaghreb", "Laboratoire Lavoisier", "Laboratoire de Métrologie", "HR Access", "NIDA", "TTN", "Clinique El Amen"],
+      },
+    ],
   },
   {
     id: "industrie",
