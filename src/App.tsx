@@ -8,6 +8,9 @@ import APropos from "./pages/APropos.tsx";
 import TraitementAir from "./pages/TraitementAir.tsx";
 import Climatisation from "./pages/Climatisation.tsx";
 import Contact from "./pages/Contact.tsx";
+import References from "./pages/References.tsx";
+import Partenaires from "./pages/Partenaires.tsx";
+import SavMaintenance from "./pages/SavMaintenance.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -24,6 +27,9 @@ const App = () => (
           <Route path="/traitement-de-lair" element={<TraitementAir />} />
           <Route path="/climatisation" element={<Climatisation />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/references" element={<References />} />
+          <Route path="/partenaires" element={<Partenaires />} />
+          <Route path="/sav-maintenance" element={<SavMaintenance />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
