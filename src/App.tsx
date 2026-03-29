@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import APropos from "./pages/APropos.tsx";
 import TraitementAir from "./pages/TraitementAir.tsx";
 import Climatisation from "./pages/Climatisation.tsx";
+import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
