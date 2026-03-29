@@ -40,8 +40,8 @@ const approach = [
 
 const references = [
   // Telecom & Broadcasting
-  "Ooredoo (299 unités)", "Orange Tunisie (120 unités)", "Tunisie Telecom (90 unités)",
-  "ERTT (51 unités)", "Parc Telecom", "Planet", "3S - Globalnet", "Telnet", "ASBU",
+  "Ooredoo", "Orange Tunisie", "Tunisie Telecom",
+  "ERTT", "Parc Telecom", "Planet", "3S - Globalnet", "Telnet", "ASBU",
   "LTC - Quinta Communication", "Radio Régionale de Tataouine",
   // Banques, Conservation & Assurances
   "Banque Africaine de Développement", "Arab Tunisian Bank ATB", "Banque de Tunisie",
@@ -50,15 +50,15 @@ const references = [
   "Conservation Foncière de Béja", "Conservation Foncière de Bizerte", "Conservation Foncière de Sfax",
   "CNSS", "COMAR", "Assurance Selim", "AMI Assurances", "GAT Assurance",
   // Data Centers & Infrastructures critiques
-  "Bibliothèque Nationale (88 unités)", "Centre de Tri Postale (18 unités)",
-  "Cité de la Culture (14 unités)", "Centre National de l'Informatique CNI (14 unités)",
-  "Teleperformance (19 unités)", "Bosch LAAT (13 unités)", "Régie Nationale des Tabacs (14 unités)",
+  "Bibliothèque Nationale", "Centre de Tri Postale",
+  "Cité de la Culture", "Centre National de l'Informatique CNI",
+  "Teleperformance", "Bosch LAAT", "Régie Nationale des Tabacs",
   "ST Microelectronic", "Monetique", "Tunisie Leasing", "Faurecia",
-  "Areva Sud (10 unités)", "Areva Nord (7 unités)", "Centre d'Appel Stream (8 unités)",
+  "Areva Sud", "Areva Nord", "Centre d'Appel Stream",
   "Centre Informatique Ministère des Finances", "Centre Informatique Ministère de la Santé",
-  "STEG (7 unités)", "Ministère de l'Intérieur", "Chambres des Députés",
+  "STEG", "Ministère de l'Intérieur", "Chambres des Députés",
   "Musée du Bardo", "Musée de Djerba", "La Cinémathèque", "CERT",
-  "Aviation Training Center of Tunisia", "Usine Valeo", "Usine Lilas (11 unités)",
+  "Aviation Training Center of Tunisia", "Usine Valeo", "Usine Lilas",
   "SFBT", "CIPI Actia", "Delice", "Focus", "Colas Rail",
   "Laboratoire Pharmaghreb", "Laboratoire Lavoisier", "Laboratoire de Métrologie",
   "HR Access", "NIDA", "TTN", "Clinique El Amen",
