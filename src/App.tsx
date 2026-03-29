@@ -8,6 +8,9 @@ import APropos from "./pages/APropos.tsx";
 import TraitementAir from "./pages/TraitementAir.tsx";
 import Climatisation from "./pages/Climatisation.tsx";
 import Contact from "./pages/Contact.tsx";
+import References from "./pages/References.tsx";
+import Partenaires from "./pages/Partenaires.tsx";
+import SavMaintenance from "./pages/SavMaintenance.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
