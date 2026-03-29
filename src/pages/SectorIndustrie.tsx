@@ -68,6 +68,7 @@ const SectorIndustrie = () => (
       <SectorCTA
         title="Votre process mérite une qualité d'air à sa mesure."
         body="Chaque environnement industriel est unique. Clean Air sélectionne et met en œuvre les équipements adaptés à vos contraintes process, réglementaires et énergétiques — avec le suivi SAV qui garantit la conformité dans la durée."
+        referencesFilter="industrie"
       />
     </main>
     <Footer />

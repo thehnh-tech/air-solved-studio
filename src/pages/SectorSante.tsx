@@ -73,6 +73,7 @@ const SectorSante = () => (
       <SectorCTA
         title="Votre établissement mérite une qualité d'air irréprochable."
         body="Que ce soit pour un nouveau projet, une mise aux normes ou un contrat de maintenance — Clean Air vous accompagne avec l'expertise et les partenaires qu'exige le secteur de la santé."
+        referencesFilter="sante"
       />
     </main>
     <Footer />

@@ -7,7 +7,7 @@ const AirTreatmentHero = () => (
   <section className="relative min-h-[70vh] flex items-center pt-20 overflow-hidden">
     <div className="absolute inset-0">
       <img src={heroBg} alt="Salle blanche traitement de l'air" className="w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-brand-dark/80" />
+      <div className="absolute inset-0 bg-[#004380]/60" />
     </div>
     <div className="container relative z-10 py-20">
       <motion.div
