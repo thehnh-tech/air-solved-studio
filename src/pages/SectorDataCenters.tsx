@@ -39,10 +39,29 @@ const approach = [
 ];
 
 const references = [
-  "Tunisie Telecom", "Orange Tunisie", "Ooredoo",
-  "BIAT", "Banque Centrale de Tunisie", "STB",
-  "Attijari Bank", "Amen Bank", "BH Bank",
-  "Tunisair", "STEG", "La Poste Tunisienne",
+  // Telecom & Broadcasting
+  "Ooredoo (299 unités)", "Orange Tunisie (120 unités)", "Tunisie Telecom (90 unités)",
+  "ERTT (51 unités)", "Parc Telecom", "Planet", "3S - Globalnet", "Telnet", "ASBU",
+  "LTC - Quinta Communication", "Radio Régionale de Tataouine",
+  // Banques, Conservation & Assurances
+  "Banque Africaine de Développement", "Arab Tunisian Bank ATB", "Banque de Tunisie",
+  "Attijari Bank", "Banque Maghrebine", "BIAT", "Banque Centrale de Tunisie",
+  "Banque Zitouna", "BNA", "UBCI", "BTE", "QNB", "Tunisie Valeur",
+  "Conservation Foncière de Béja", "Conservation Foncière de Bizerte", "Conservation Foncière de Sfax",
+  "CNSS", "COMAR", "Assurance Selim", "AMI Assurances", "GAT Assurance",
+  // Data Centers & Infrastructures critiques
+  "Bibliothèque Nationale (88 unités)", "Centre de Tri Postale (18 unités)",
+  "Cité de la Culture (14 unités)", "Centre National de l'Informatique CNI (14 unités)",
+  "Teleperformance (19 unités)", "Bosch LAAT (13 unités)", "Régie Nationale des Tabacs (14 unités)",
+  "ST Microelectronic", "Monetique", "Tunisie Leasing", "Faurecia",
+  "Areva Sud (10 unités)", "Areva Nord (7 unités)", "Centre d'Appel Stream (8 unités)",
+  "Centre Informatique Ministère des Finances", "Centre Informatique Ministère de la Santé",
+  "STEG (7 unités)", "Ministère de l'Intérieur", "Chambres des Députés",
+  "Musée du Bardo", "Musée de Djerba", "La Cinémathèque", "CERT",
+  "Aviation Training Center of Tunisia", "Usine Valeo", "Usine Lilas (11 unités)",
+  "SFBT", "CIPI Actia", "Delice", "Focus", "Colas Rail",
+  "Laboratoire Pharmaghreb", "Laboratoire Lavoisier", "Laboratoire de Métrologie",
+  "HR Access", "NIDA", "TTN", "Clinique El Amen",
 ];
 
 const SectorDataCenters = () => (
