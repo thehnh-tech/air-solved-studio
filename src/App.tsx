@@ -16,6 +16,9 @@ import SectorSante from "./pages/SectorSante.tsx";
 import SectorDataCenters from "./pages/SectorDataCenters.tsx";
 import SectorIndustrie from "./pages/SectorIndustrie.tsx";
 import SectorTertiaire from "./pages/SectorTertiaire.tsx";
+import ClimTertiaire from "./pages/ClimTertiaire.tsx";
+import ClimGrosVolumes from "./pages/ClimGrosVolumes.tsx";
+import ClimHotellerie from "./pages/ClimHotellerie.tsx";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +37,9 @@ const App = () => (
           <Route path="/traitement-de-lair/industrie" element={<SectorIndustrie />} />
           <Route path="/traitement-de-lair/tertiaire" element={<SectorTertiaire />} />
           <Route path="/climatisation" element={<Climatisation />} />
+          <Route path="/climatisation/tertiaire-bureaux" element={<ClimTertiaire />} />
+          <Route path="/climatisation/gros-volumes" element={<ClimGrosVolumes />} />
+          <Route path="/climatisation/hotellerie-residentiel" element={<ClimHotellerie />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/references" element={<References />} />
           <Route path="/partenaires" element={<Partenaires />} />
