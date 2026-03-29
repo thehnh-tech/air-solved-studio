@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const SavCTA = () => (
   <section className="py-20 bg-primary">
@@ -17,12 +17,19 @@ const SavCTA = () => (
         Contactez-nous pour définir le contrat de maintenance adapté à vos équipements et à votre contexte d'exploitation.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button asChild size="lg" variant="secondary">
-          <Link to="/contact">Parlons de votre projet →</Link>
-        </Button>
-        <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-          <Link to="/references">Découvrir nos références</Link>
-        </Button>
+        <Link
+          to="/contact"
+          className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-secondary text-secondary-foreground font-bold rounded-[7px] hover:bg-secondary/90 transition-colors"
+        >
+          Parlons de votre projet
+          <ArrowRight className="w-4 h-4" />
+        </Link>
+        <Link
+          to="/references"
+          className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border-2 border-primary-foreground/30 text-primary-foreground font-bold rounded-[7px] hover:bg-primary-foreground/10 transition-colors"
+        >
+          Découvrir nos références
+        </Link>
       </div>
     </div>
   </section>

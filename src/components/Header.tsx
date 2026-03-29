@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { cn } from "@/lib/utils";
 
 const navItems = [
   { label: "Accueil", href: "/" },
@@ -32,6 +33,14 @@ const navItems = [
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { pathname } = useLocation();
+
+  const isActive = (href: string, children?: { href: string }[]) => {
+    if (href === "/") return pathname === "/";
+    if (pathname === href) return true;
+    if (children?.some((c) => pathname === c.href)) return true;
+    return pathname.startsWith(href + "/");
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
@@ -46,7 +55,12 @@ const Header = () => {
             <div key={item.label} className="relative group">
               <Link
                 to={item.href}
-                className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-foreground hover:text-brand-light transition-colors"
+                className={cn(
+                  "flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors",
+                  isActive(item.href, item.children)
+                    ? "text-secondary font-bold"
+                    : "text-foreground hover:text-secondary"
+                )}
               >
                 {item.label}
                 {item.children && <ChevronDown className="w-3.5 h-3.5" />}
@@ -58,7 +72,12 @@ const Header = () => {
                       <Link
                         key={child.label}
                         to={child.href}
-                        className="block px-4 py-2.5 text-sm text-foreground hover:bg-muted hover:text-brand-light transition-colors"
+                        className={cn(
+                          "block px-4 py-2.5 text-sm transition-colors",
+                          pathname === child.href
+                            ? "text-secondary font-bold bg-muted"
+                            : "text-foreground hover:bg-muted hover:text-secondary"
+                        )}
                       >
                         {child.label}
                       </Link>
@@ -94,7 +113,12 @@ const Header = () => {
               <div key={item.label}>
                 <Link
                   to={item.href}
-                  className="block px-3 py-2.5 text-sm font-medium text-foreground hover:text-brand-light"
+                  className={cn(
+                    "block px-3 py-2.5 text-sm font-medium",
+                    isActive(item.href, item.children)
+                      ? "text-secondary font-bold"
+                      : "text-foreground hover:text-secondary"
+                  )}
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}
@@ -103,7 +127,12 @@ const Header = () => {
                   <Link
                     key={child.label}
                     to={child.href}
-                    className="block pl-8 py-2 text-sm text-muted-foreground hover:text-brand-light"
+                    className={cn(
+                      "block pl-8 py-2 text-sm",
+                      pathname === child.href
+                        ? "text-secondary font-bold"
+                        : "text-muted-foreground hover:text-secondary"
+                    )}
                     onClick={() => setMobileOpen(false)}
                   >
                     {child.label}

@@ -5,9 +5,10 @@ import { ArrowRight } from "lucide-react";
 interface SectorCTAProps {
   title: string;
   body: string;
+  referencesFilter?: string;
 }
 
-const SectorCTA = ({ title, body }: SectorCTAProps) => (
+const SectorCTA = ({ title, body, referencesFilter }: SectorCTAProps) => (
   <section className="py-20 bg-primary">
     <div className="container">
       <motion.div
@@ -21,13 +22,13 @@ const SectorCTA = ({ title, body }: SectorCTAProps) => (
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-secondary text-accent-foreground font-bold rounded-[7px] hover:bg-secondary/90 transition-colors"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-secondary text-secondary-foreground font-bold rounded-[7px] hover:bg-secondary/90 transition-colors"
           >
             Parlons de votre projet <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
-            to="/references"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border-2 border-primary-foreground/30 text-primary-foreground font-bold rounded-[7px] hover:border-primary-foreground/60 transition-colors"
+            to={referencesFilter ? `/references?secteur=${referencesFilter}` : "/references"}
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border-2 border-primary-foreground/30 text-primary-foreground font-bold rounded-[7px] hover:bg-primary-foreground/10 transition-colors"
           >
             Découvrir nos références
           </Link>
