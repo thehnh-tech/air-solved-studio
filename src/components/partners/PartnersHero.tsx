@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
-import heroImg from "@/assets/partners-hero.jpg";
 
 const PartnersHero = () => (
-  <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-    <img src={heroImg} alt="Partenaires Clean Air Technology" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
-    <div className="absolute inset-0 bg-primary/80" />
+  <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-[#004380]">
     <div className="container relative z-10 text-center py-24">
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
