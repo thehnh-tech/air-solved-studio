@@ -75,6 +75,7 @@ const SectorDataCenters = () => (
       <SectorCTA
         title="Votre infrastructure critique mérite le meilleur."
         body="Data center, salle serveurs, site telecom — Clean Air et Vertiv déploient la solution adaptée à votre infrastructure, avec le suivi SAV qui garantit votre disponibilité dans la durée."
+        referencesFilter="data-centers"
       />
     </main>
     <Footer />

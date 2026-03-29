@@ -63,6 +63,7 @@ const SectorTertiaire = () => (
       <SectorCTA
         title="Votre bâtiment mérite des équipements à la hauteur de vos ambitions."
         body="Maître d'ouvrage, promoteur, exploitant ou gestionnaire de patrimoine — Clean Air vous accompagne dans la sélection et la mise en œuvre des solutions de traitement d'air et de climatisation adaptées à chaque espace de votre bâtiment."
+        referencesFilter="tertiaire"
       />
     </main>
     <Footer />
