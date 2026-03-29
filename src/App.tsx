@@ -12,6 +12,10 @@ import References from "./pages/References.tsx";
 import Partenaires from "./pages/Partenaires.tsx";
 import SavMaintenance from "./pages/SavMaintenance.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import SectorSante from "./pages/SectorSante.tsx";
+import SectorDataCenters from "./pages/SectorDataCenters.tsx";
+import SectorIndustrie from "./pages/SectorIndustrie.tsx";
+import SectorTertiaire from "./pages/SectorTertiaire.tsx";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +29,10 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/a-propos" element={<APropos />} />
           <Route path="/traitement-de-lair" element={<TraitementAir />} />
+          <Route path="/traitement-de-lair/sante" element={<SectorSante />} />
+          <Route path="/traitement-de-lair/data-centers-telecom" element={<SectorDataCenters />} />
+          <Route path="/traitement-de-lair/industrie" element={<SectorIndustrie />} />
+          <Route path="/traitement-de-lair/tertiaire" element={<SectorTertiaire />} />
           <Route path="/climatisation" element={<Climatisation />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/references" element={<References />} />
