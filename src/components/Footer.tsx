@@ -14,14 +14,28 @@ const Footer = () => (
               <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
               Immeuble Le Boulevard, Le boulevard principal, Les Berges du Lac, 2070 Tunis — Tunisie
             </p>
-            <p className="flex items-center gap-2">
-              <Phone className="w-4 h-4 flex-shrink-0" />
-              (+216) 29 472 875
-            </p>
-            <p className="flex items-center gap-2">
-              <Mail className="w-4 h-4 flex-shrink-0" />
-              contact@cleanair.com.tn
-            </p>
+            <div>
+              <p className="font-semibold text-xs uppercase tracking-wide mb-1">Commercial</p>
+              <p className="flex items-center gap-2">
+                <Mail className="w-4 h-4 flex-shrink-0" />
+                commercial@cleanair.com.tn
+              </p>
+              <p className="flex items-center gap-2 mt-1">
+                <Phone className="w-4 h-4 flex-shrink-0" />
+                (+216) 29 472 875
+              </p>
+            </div>
+            <div>
+              <p className="font-semibold text-xs uppercase tracking-wide mb-1">Service Après Vente</p>
+              <p className="flex items-center gap-2">
+                <Mail className="w-4 h-4 flex-shrink-0" />
+                sav@cleanair.com.tn
+              </p>
+              <p className="flex items-center gap-2 mt-1">
+                <Phone className="w-4 h-4 flex-shrink-0" />
+                (+216) 27 426 700
+              </p>
+            </div>
           </div>
         </div>
 

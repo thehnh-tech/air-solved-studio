@@ -231,17 +231,35 @@ const ContactFormSection = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
-                  <Phone className="w-5 h-5 text-secondary shrink-0" />
-                  <a href="tel:+21629472875" className="text-foreground hover:text-primary transition-colors">
-                    (+216) 29 472 875
-                  </a>
+                <div>
+                  <p className="font-semibold text-foreground text-sm mb-2">Commercial</p>
+                  <div className="flex items-center gap-4">
+                    <Mail className="w-5 h-5 text-secondary shrink-0" />
+                    <a href="mailto:commercial@cleanair.com.tn" className="text-foreground hover:text-primary transition-colors">
+                      commercial@cleanair.com.tn
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-4 mt-2">
+                    <Phone className="w-5 h-5 text-secondary shrink-0" />
+                    <a href="tel:+21629472875" className="text-foreground hover:text-primary transition-colors">
+                      (+216) 29 472 875
+                    </a>
+                  </div>
                 </div>
-                <div className="flex items-center gap-4">
-                  <Mail className="w-5 h-5 text-secondary shrink-0" />
-                  <a href="mailto:contact@cleanair.com.tn" className="text-foreground hover:text-primary transition-colors">
-                    contact@cleanair.com.tn
-                  </a>
+                <div>
+                  <p className="font-semibold text-foreground text-sm mb-2">Service Après Vente</p>
+                  <div className="flex items-center gap-4">
+                    <Mail className="w-5 h-5 text-secondary shrink-0" />
+                    <a href="mailto:sav@cleanair.com.tn" className="text-foreground hover:text-primary transition-colors">
+                      sav@cleanair.com.tn
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-4 mt-2">
+                    <Phone className="w-5 h-5 text-secondary shrink-0" />
+                    <a href="tel:+21627426700" className="text-foreground hover:text-primary transition-colors">
+                      (+216) 27 426 700
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
