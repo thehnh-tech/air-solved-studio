@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import aboutTeam from "@/assets/about-team.jpg";
+import teamHistory from "@/assets/team-history.jpg";
 
 const HistorySection = () => (
   <section className="py-24 bg-background">
@@ -41,12 +41,11 @@ const HistorySection = () => (
           className="relative"
         >
           <img
-            src={aboutTeam}
+            src={teamHistory}
             alt="Équipe Clean Air Technology"
-            className="rounded-xl shadow-xl w-full"
+            className="rounded-xl shadow-xl w-full object-cover object-center"
+            style={{ height: "420px" }}
             loading="lazy"
-            width={1920}
-            height={1080}
           />
           <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground px-6 py-4 rounded-xl shadow-lg">
             <p className="text-3xl font-bold">2003</p>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Briefcase, Wrench, Quote } from "lucide-react";
-import aboutTeam from "@/assets/about-team.jpg";
+import team20ans from "@/assets/team-20ans.jpg";
 
 const testimonials = [
   {
@@ -99,15 +99,19 @@ const TeamSection = () => (
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        className="relative rounded-xl overflow-hidden shadow-xl"
       >
         <img
-          src={aboutTeam}
-          alt="L'équipe Clean Air Technology"
-          className="w-full rounded-xl shadow-xl"
+          src={team20ans}
+          alt="L'équipe Clean Air Technology — 20 ans"
+          className="w-full object-cover object-center"
+          style={{ height: "340px" }}
           loading="lazy"
-          width={1920}
-          height={1080}
         />
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[hsl(207,100%,25%)] via-[hsl(207,100%,25%/0.8)] to-transparent px-8 py-6">
+          <p className="text-white font-bold text-lg">L'équipe Clean Air Technology — 20 ans d'aventure commune.</p>
+          <p className="text-[#5BC4F1] italic font-medium mt-1">Consider it solved.</p>
+        </div>
       </motion.div>
     </div>
   </section>
