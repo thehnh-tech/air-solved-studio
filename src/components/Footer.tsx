@@ -7,8 +7,8 @@ const Footer = () => (
     <div className="px-6 py-10 md:px-20 md:py-[60px]">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-start gap-8 md:gap-10">
         {/* Coordonnées */}
-        <div>
-          <img src={logo} alt="Clean Air Technology" style={{ filter: "brightness(0) invert(1)", width: "160px", height: "auto", marginBottom: "8px", display: "block" }} />
+        <div className="flex flex-col justify-start" style={{ paddingTop: 0, marginTop: 0 }}>
+          <img src={logo} alt="Clean Air Technology" style={{ filter: "brightness(0) invert(1)", width: "120px", height: "auto", marginBottom: "0px", display: "block" }} />
           <div className="space-y-3 text-sm opacity-80" style={{ marginTop: 0, paddingTop: 0 }}>
             <p className="flex items-start gap-2">
               <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
