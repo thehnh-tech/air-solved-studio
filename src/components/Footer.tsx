@@ -4,8 +4,8 @@ import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground">
-    <div style={{ padding: "60px 80px" }}>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", alignItems: "start", gap: "40px" }}>
+    <div className="px-6 py-10 md:px-20 md:py-[60px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-start gap-8 md:gap-10">
         {/* Coordonnées */}
         <div>
           <img src={logo} alt="Clean Air Technology" style={{ filter: "brightness(0) invert(1)", width: "160px", height: "auto", marginBottom: "8px", display: "block" }} />
