@@ -4,7 +4,7 @@ import teamHistory from "@/assets/team-history.jpg";
 const HistorySection = () => (
   <section className="py-24 bg-background">
     <div className="container">
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="grid lg:grid-cols-2 gap-16 items-center mb-12">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -32,28 +32,28 @@ const HistorySection = () => (
             </p>
           </div>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative"
-        >
-          <img
-            src={teamHistory}
-            alt="Équipe Clean Air Technology"
-            className="rounded-xl shadow-xl w-full object-cover object-center"
-            style={{ height: "420px", objectPosition: "center 30%" }}
-            loading="lazy"
-          />
-          <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground px-6 py-4 rounded-xl shadow-lg">
-            <p className="text-3xl font-bold">2003</p>
-            <p className="text-sm text-primary-foreground/80">Année de fondation</p>
-          </div>
-        </motion.div>
       </div>
     </div>
+
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="relative w-full"
+    >
+      <img
+        src={teamHistory}
+        alt="Équipe Clean Air Technology"
+        className="w-full object-cover"
+        style={{ height: "420px", objectPosition: "center 30%" }}
+        loading="lazy"
+      />
+      <div className="absolute bottom-6 left-6 bg-primary text-primary-foreground px-6 py-4 rounded-xl shadow-lg">
+        <p className="text-3xl font-bold">2003</p>
+        <p className="text-sm text-primary-foreground/80">Année de fondation</p>
+      </div>
+    </motion.div>
   </section>
 );
 
