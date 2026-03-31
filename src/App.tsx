@@ -19,6 +19,7 @@ import SectorTertiaire from "./pages/SectorTertiaire.tsx";
 import ClimTertiaire from "./pages/ClimTertiaire.tsx";
 import ClimGrosVolumes from "./pages/ClimGrosVolumes.tsx";
 import ClimHotellerie from "./pages/ClimHotellerie.tsx";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
