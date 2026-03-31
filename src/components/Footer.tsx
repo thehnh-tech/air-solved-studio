@@ -4,11 +4,11 @@ import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground">
-    <div className="container py-16">
-      <div className="grid md:grid-cols-4 gap-12 items-start">
+    <div style={{ padding: "60px 80px" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", alignItems: "start", gap: "40px" }}>
         {/* Coordonnées */}
-        <div className="md:col-span-1">
-          <img src={logo} alt="Clean Air Technology" className="w-auto" style={{ filter: "brightness(0) invert(1)", minWidth: "160px", marginBottom: "20px" }} />
+        <div>
+          <img src={logo} alt="Clean Air Technology" style={{ filter: "brightness(0) invert(1)", width: "160px", height: "auto", marginBottom: "24px", display: "block" }} />
           <div className="space-y-3 text-sm opacity-80">
             <p className="flex items-start gap-2">
               <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
