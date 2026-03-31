@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Briefcase, Wrench, Quote } from "lucide-react";
-import aboutTeam from "@/assets/about-team.jpg";
+import team20ans from "@/assets/team-20ans.jpg";
 
 const testimonials = [
   {
