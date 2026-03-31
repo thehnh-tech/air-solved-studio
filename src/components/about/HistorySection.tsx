@@ -40,13 +40,15 @@ const HistorySection = () => (
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative"
         >
-          <img
-            src={teamHistory}
-            alt="Équipe Clean Air Technology"
-            className="w-full object-cover rounded-xl"
-            style={{ height: "480px", objectPosition: "center 25%", transform: "scale(0.95)" }}
-            loading="lazy"
-          />
+          <div className="h-[360px] w-full overflow-hidden rounded-xl bg-brand-alt-bg">
+            <img
+              src={teamHistory}
+              alt="Équipe Clean Air Technology"
+              className="h-full w-full object-contain"
+              style={{ objectPosition: "center center" }}
+              loading="lazy"
+            />
+          </div>
           <div className="absolute bottom-4 left-4 bg-primary text-primary-foreground px-5 py-3 rounded-xl shadow-lg">
             <p className="text-2xl font-bold">2003</p>
             <p className="text-xs text-primary-foreground/80">Année de fondation</p>
