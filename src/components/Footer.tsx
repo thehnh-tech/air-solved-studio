@@ -8,8 +8,8 @@ const Footer = () => (
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", alignItems: "start", gap: "40px" }}>
         {/* Coordonnées */}
         <div>
-          <img src={logo} alt="Clean Air Technology" style={{ filter: "brightness(0) invert(1)", width: "160px", height: "auto", marginBottom: "24px", display: "block" }} />
-          <div className="space-y-3 text-sm opacity-80">
+          <img src={logo} alt="Clean Air Technology" style={{ filter: "brightness(0) invert(1)", width: "160px", height: "auto", marginBottom: "8px", display: "block" }} />
+          <div className="space-y-3 text-sm opacity-80" style={{ marginTop: 0, paddingTop: 0 }}>
             <p className="flex items-start gap-2">
               <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
               Immeuble Le Boulevard, Le boulevard principal, Les Berges du Lac, 2070 Tunis — Tunisie
