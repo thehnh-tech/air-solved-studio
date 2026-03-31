@@ -5,7 +5,7 @@ import team20ans from "@/assets/team-20ans.jpg";
 const testimonials = [
   {
     name: "Tarek Chaari",
-    role: "Directeur Technique — 10+ ans",
+    role: "Directeur Technique — 17 ans",
     quote: "Je suis toujours face à de nouvelles problématiques à résoudre et de nouveaux défis à surmonter. C'est ce qui rend ce métier passionnant.",
   },
   {
