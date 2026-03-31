@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-4 gap-12">
         {/* Coordonnées */}
         <div className="md:col-span-1">
-          <img src={logo} alt="Clean Air Technology" className="h-12 w-auto mb-6" style={{ filter: "brightness(0) invert(1)" }} />
+          <img src={logo} alt="Clean Air Technology" className="w-auto" style={{ filter: "brightness(0) invert(1)", minWidth: "160px", marginBottom: "20px" }} />
           <div className="space-y-3 text-sm opacity-80">
             <p className="flex items-start gap-2">
               <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
