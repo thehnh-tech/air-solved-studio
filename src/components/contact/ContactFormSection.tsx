@@ -13,7 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { MapPin, Phone, Mail, Printer } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import {
   Form,
@@ -233,13 +233,9 @@ const ContactFormSection = () => {
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="w-5 h-5 text-secondary shrink-0" />
-                  <a href="tel:+21671965363" className="text-foreground hover:text-primary transition-colors">
-                    (+216) 71 965 363
+                  <a href="tel:+21629472875" className="text-foreground hover:text-primary transition-colors">
+                    (+216) 29 472 875
                   </a>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Printer className="w-5 h-5 text-secondary shrink-0" />
-                  <span className="text-muted-foreground">(+216) 71 965 484</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail className="w-5 h-5 text-secondary shrink-0" />
