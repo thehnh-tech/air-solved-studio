@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import aboutTeam from "@/assets/about-team.jpg";
+import teamHistory from "@/assets/team-history.jpg";
 
 const HistorySection = () => (
   <section className="py-24 bg-background">
