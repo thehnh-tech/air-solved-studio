@@ -9,34 +9,36 @@ const Footer = () => (
         {/* Coordonnées */}
         <div className="flex flex-col justify-start" style={{ paddingTop: 0, marginTop: 0 }}>
           <img src={logo} alt="Clean Air Technology" style={{ filter: "brightness(0) invert(1)", width: "120px", height: "auto", marginBottom: "0px", display: "block" }} />
-          <div className="space-y-3 text-sm opacity-80" style={{ marginTop: 0, paddingTop: 0 }}>
-            <p className="flex items-start gap-2">
-              <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-              Immeuble Le Boulevard, Le boulevard principal, Les Berges du Lac, 2070 Tunis — Tunisie
-            </p>
-            <div>
-              <p className="font-semibold text-xs uppercase tracking-wide mb-1">Commercial</p>
-              <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4 flex-shrink-0" />
-                commercial@cleanair.com.tn
+           <div style={{ marginTop: 0, paddingTop: 0 }}>
+              <p className="flex items-start gap-2" style={{ fontSize: '13px', fontWeight: 300 }}>
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 opacity-80" />
+                Immeuble Le Boulevard, Les Berges du Lac, 2070 Tunis
               </p>
-              <p className="flex items-center gap-2 mt-1">
-                <Phone className="w-4 h-4 flex-shrink-0" />
-                (+216) 29 472 875
-              </p>
+
+              <div style={{ marginTop: '12px' }}>
+                <p style={{ fontSize: '12px', fontWeight: 500, color: '#5BC4F1' }}>Commercial</p>
+                <p className="flex items-center gap-2 opacity-80" style={{ fontSize: '13px', fontWeight: 300 }}>
+                  <Mail className="w-3.5 h-3.5 flex-shrink-0" />
+                  commercial@cleanair.com.tn
+                </p>
+                <p className="flex items-center gap-2 opacity-80 mt-0.5" style={{ fontSize: '13px', fontWeight: 300 }}>
+                  <Phone className="w-3.5 h-3.5 flex-shrink-0" />
+                  (+216) 29 472 875
+                </p>
+              </div>
+
+              <div style={{ marginTop: '12px' }}>
+                <p style={{ fontSize: '12px', fontWeight: 500, color: '#5BC4F1' }}>SAV</p>
+                <p className="flex items-center gap-2 opacity-80" style={{ fontSize: '13px', fontWeight: 300 }}>
+                  <Mail className="w-3.5 h-3.5 flex-shrink-0" />
+                  sav@cleanair.com.tn
+                </p>
+                <p className="flex items-center gap-2 opacity-80 mt-0.5" style={{ fontSize: '13px', fontWeight: 300 }}>
+                  <Phone className="w-3.5 h-3.5 flex-shrink-0" />
+                  (+216) 27 426 700
+                </p>
+              </div>
             </div>
-            <div>
-              <p className="font-semibold text-xs uppercase tracking-wide mb-1">Service Après Vente</p>
-              <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4 flex-shrink-0" />
-                sav@cleanair.com.tn
-              </p>
-              <p className="flex items-center gap-2 mt-1">
-                <Phone className="w-4 h-4 flex-shrink-0" />
-                (+216) 27 426 700
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Nos solutions */}
