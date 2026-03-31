@@ -38,13 +38,14 @@ const HistorySection = () => (
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative"
+          className="relative overflow-hidden rounded-xl shadow-xl"
+          style={{ height: "420px" }}
         >
           <img
             src={teamHistory}
             alt="Équipe Clean Air Technology"
-            className="rounded-xl shadow-xl w-full object-cover object-center"
-            style={{ height: "420px", objectPosition: "center 30%" }}
+            className="w-full h-full object-cover"
+            style={{ objectPosition: "center 30%", transform: "scale(0.92)" }}
             loading="lazy"
           />
           <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground px-6 py-4 rounded-xl shadow-lg">
