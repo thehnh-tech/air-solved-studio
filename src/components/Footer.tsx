@@ -5,7 +5,7 @@ import logo from "@/assets/logo.png";
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground">
     <div className="container py-16">
-      <div className="grid md:grid-cols-4 gap-12">
+      <div className="grid md:grid-cols-4 gap-12 items-start">
         {/* Coordonnées */}
         <div className="md:col-span-1">
           <img src={logo} alt="Clean Air Technology" className="w-auto" style={{ filter: "brightness(0) invert(1)", minWidth: "160px", marginBottom: "20px" }} />
