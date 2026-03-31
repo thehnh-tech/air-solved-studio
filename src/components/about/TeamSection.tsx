@@ -5,12 +5,12 @@ import team20ans from "@/assets/team-20ans.jpg";
 const testimonials = [
   {
     name: "Tarek Chaari",
-    role: "Directeur Technique — 10+ ans",
+    role: "Directeur Technique — 17 ans",
     quote: "Je suis toujours face à de nouvelles problématiques à résoudre et de nouveaux défis à surmonter. C'est ce qui rend ce métier passionnant.",
   },
   {
     name: "Imen Boussoffara",
-    role: "8 ans chez Clean Air",
+    role: "15 ans chez Clean Air",
     quote: "Un employé heureux fait un client heureux. Je suis heureuse chez Clean Air.",
   },
 ];

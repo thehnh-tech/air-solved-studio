@@ -46,7 +46,7 @@ const HistorySection = () => (
         src={teamHistory}
         alt="Équipe Clean Air Technology"
         className="w-full object-cover"
-        style={{ height: "560px", objectPosition: "center 25%" }}
+        style={{ height: "560px", objectPosition: "center 25%", transform: "scale(0.92)" }}
         loading="lazy"
       />
       <div className="absolute bottom-6 left-6 bg-primary text-primary-foreground px-6 py-4 rounded-xl shadow-lg">
