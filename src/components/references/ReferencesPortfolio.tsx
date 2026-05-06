@@ -10,12 +10,12 @@ const tabs = [
     intro: "Nulle part le traitement de l'air n'est aussi critique. Clean Air accompagne les établissements de santé depuis plus de vingt ans.",
     groups: [
       {
-        title: "Grand Tunis",
-        clients: ["Polyclinique Les Jasmins", "Centre International Carthage Medical", "Clinique Ennasr", "Polyclinique Les Berges du Lac", "Clinique Taoufik", "La Rose Clinique", "Clinique Pasteur", "Clinique Echifa", "Clinique Al Farabi", "Polyclinique Essalama", "Cliniques El Manar", "Clinique El Amen", "Clinique Soukra", "Clinique El Amen Mutuelleville", "Clinique Montplaisir", "Clinique Alyssa", "Polyclinique Les Narcisses", "Clinique Le Bardo", "Clinique Saint Augustin"],
+        title: "Hôpitaux & Instituts",
+        clients: ["Institut Pasteur"],
       },
       {
-        title: "Régions",
-        clients: ["Clinique Zaghouan", "Clinique El Yosr", "Polyclinique Elalya", "Clinique Ezzahra", "Clinique Amen Bizerte", "Clinique Amen Béja", "Polyclinique du Capbon", "Clinique Megrine", "Polyclinique Dar Essalem", "Clinique Ennoura", "Clinique El-Arij", "Clinique les Oliviers", "Clinique El Walid Ezzahra", "Clinic La Douce Jerba", "Clinique Hamda Laouani"],
+        title: "Cliniques & Polycliniques",
+        clients: ["Polyclinique Les Jasmins", "Clinique Ennasr", "Polyclinique Les Berges du Lac", "Clinique Taoufik", "Clinique Pasteur", "Clinique Echifa", "Clinique Al Farabi", "Polyclinique Essalama", "Cliniques El Manar", "Clinique El Amen", "Clinique Soukra", "Clinique El Amen Mutuelleville", "Clinique Montplaisir", "Clinique Alyssa", "Polyclinique Les Narcisses", "Clinique Le Bardo", "Clinique Saint Augustin", "Clinique Zaghouan", "Clinique El Yosr", "Polyclinique Elalya", "Clinique Ezzahra", "Clinique Amen Bizerte", "Clinique Amen Béja", "Polyclinique du Capbon", "Clinique Megrine", "Polyclinique Dar Essalem", "Clinique Ennoura", "Clinique El-Arij", "Clinique les Oliviers", "Clinique El Walid Ezzahra", "Clinic La Douce Jerba", "Clinique Hamda Laouani"],
       },
     ],
   },
@@ -46,8 +46,32 @@ const tabs = [
     intro: "Quand l'air fait partie du process de fabrication, aucune approximation n'est acceptable.",
     groups: [
       {
+        title: "Pharmaceutique & Biomedical",
+        clients: ["Sartorius Stedim", "Sanofi Opella", "Fresenius Kabi", "Helioflex", "Laboratoire Newix Pharma", "Adhe-Els", "Laboratoire Unimed", "Laboratoire MVI", "CLS", "Laboratoire Pharmin", "Laboratoire Galpharma", "Philadelphia Pharma", "Sened Pharma", "Labo Pierre Fabre", "Medipharm", "Laboratoire Pharmaghreb", "Institut Pasteur", "Laboratoire Ceva", "Labo Adwya", "Laboratoire d'Hygiène", "Laboratoire Teriak", "Laboratoire Xen", "Laboratoire Medis", "Dépôt Pharmacie Centrale", "Laboratoire Biogalenic"],
+      },
+      {
         title: "Équipementiers & Automobile",
-        clients: ["Draexlmaier", "Bontaz", "Faurecia", "Kromberg & Schubert", "Bosch", "WCW Automotive", "Silvatrim", "Zodiac Aerospace", "CCA", "Misfat Filtration", "Valeo", "Alva Toray Group"],
+        clients: ["Draexlmaier", "Faurecia", "Bosch", "Zodiac Aerospace", "CCA", "Misfat Filtration", "Valeo", "Alva Toray Group", "Continental", "Afrique Auto", "Leoni", "Marquardt Tunisia", "Draexlmaier Siliana", "Draexlmaier Jammel"],
+      },
+      {
+        title: "Électronique",
+        clients: ["ST Microelectronic", "TTEI", "Asteel Électronique", "Timelec", "Electronique El Agba"],
+      },
+      {
+        title: "Agroalimentaire",
+        clients: ["Stial Delice", "Nani", "Conditionnement Dattes Haifa", "Sotuchoc", "SFBT", "Groupe Chahia", "EPI", "Confisserie Triki"],
+      },
+      {
+        title: "Chimie & Énergie",
+        clients: ["Henkel", "Nawara Gaz", "Areva Sud", "Areva Nord", "Cimenterie de Carthage", "Cimenterie Gafsa"],
+      },
+      {
+        title: "Textile",
+        clients: ["Sartex", "Tunisia Knitting and Finishing"],
+      },
+      {
+        title: "Autres industries",
+        clients: ["SIT Controls", "Batterie Assad", "Sky Industrie", "SNC-Lavalin", "RNTA", "WIC", "FUBA", "Lilas (SAH)", "Fumoir Carrefour"],
       },
     ],
   },
@@ -58,8 +82,24 @@ const tabs = [
     intro: "Du confort thermique des espaces de travail à la déshumidification des piscines couvertes.",
     groups: [
       {
-        title: "Clients",
-        clients: ["CIPI Actia", "Focus", "CAIR Tunisie", "BTE", "Enda Tamweel", "Teleperformance", "Société Chimique Alkimia", "Groupe Université Centrale", "Poulina Group Holding", "La Cigale Tabarka Hotel", "Somocer", "Le Golfe Restaurant", "Darty", "Fnac", "Comaf Comptoir Africain"],
+        title: "Bureaux & Administrations",
+        clients: ["CIPI Actia", "Focus", "CAIR Tunisie", "BTE", "Enda Tamweel", "Teleperformance", "Société Chimique Alkimia", "Poulina Group Holding", "Somocer", "Comaf Comptoir Africain", "BAD", "BH Bank", "UIB", "STB Bank", "Amen Bank", "Siege GTI", "Siege Ismail Group", "MAE", "Sogepa", "Studio Info", "Complex 4 Saisons Sfax", "Foncière Kairouan", "Zarzis Smart Center", "Poste Frontalier Melloula", "Gouvernorat Sousse", "Municipalité Sidi Bousaid"],
+      },
+      {
+        title: "Hôtellerie & Restauration",
+        clients: ["La Cigale Tabarka Hotel", "Le Golfe Restaurant", "Hotel Hilton Tunis", "Hotel Eden Seray", "Sun Senior Djerba", "SPA Hotel Golden Tulip", "Club Med Hammamet", "Club Med Djerba", "Hotel El Habib", "Hotel Occidental", "Hotel Thalassa Village", "Hotel Djerba Fiesta Beach", "Hotel Tamagza Palace", "Restaurant L'Eagle"],
+      },
+      {
+        title: "Commerce & Distribution",
+        clients: ["Darty", "Fnac", "Mall de Sousse", "Hypermarché Géant Tunis City 1 et 2", "Djerba Mall", "Cinema Agora", "Pull and Bear", "Kiabi Bardo", "Decathlon Tunis City", "Decathlon La Marsa", "Bershka", "Galeria Sousse"],
+      },
+      {
+        title: "Enseignement & Culture",
+        clients: ["Groupe Université Centrale", "Ecole de Santé Monastir", "ISET Borj Cedria", "Institut de la Mode Monastir", "Maison de Culture Médenine", "Centre Culturel Ajim", "Centre d'Art Dramatique"],
+      },
+      {
+        title: "Immobilier & Résidentiel premium",
+        clients: ["Immeuble Chaker Les Berges du Lac", "Athena Immobilière", "Horizon Immobilière", "Résidence Jinene Donia", "Blue Green Hill Residence", "Illiade Immobilière", "Promotion El Ahbeb", "Promotion El Biri", "Edifica", "Qatary Diar", "Dana Immobilière"],
       },
     ],
   },
