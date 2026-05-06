@@ -51,7 +51,7 @@ const tabs = [
       },
       {
         title: "Équipementiers & Automobile",
-        clients: ["Draexlmaier", "Faurecia", "Bosch", "Zodiac Aerospace", "CCA", "Misfat Filtration", "Valeo", "Alva Toray Group", "Continental", "Afrique Auto", "Leoni", "Marquardt Tunisia", "Draexlmaier Siliana", "Draexlmaier Jammel"],
+        clients: ["Draexlmaier", "Faurecia", "Bosch", "Zodiac Aerospace", "CCA", "Misfat Filtration", "Valeo", "Visteon", "Alva Toray Group", "Continental", "Afrique Auto", "Leoni", "Marquardt Tunisia", "Draexlmaier Siliana", "Draexlmaier Jammel"],
       },
       {
         title: "Électronique",
