@@ -99,16 +99,15 @@ const PartnersGrid = () => (
           >
             <div className="flex items-start gap-4 mb-4">
               <div
-                style={{ width: 180, height: 90, padding: 15 }}
-                className="rounded-lg bg-white flex items-center justify-center shrink-0 border border-border"
+                style={{ width: 180, height: 90, padding: 15, backgroundColor: "#FFFFFF" }}
+                className="rounded-lg flex items-center justify-center shrink-0 border border-border"
               >
                 <img src={p.logo} alt={`${p.name} logo`} className="max-w-full max-h-full object-contain" />
               </div>
-              <div>
-                <h3 className="text-xl font-bold text-primary font-heading">{p.name}</h3>
+              <div className="flex-1">
                 <p className="text-secondary font-medium text-sm">{p.tagline}</p>
               </div>
-              <span className="ml-auto text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full font-medium whitespace-nowrap">
+              <span className="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full font-medium whitespace-nowrap">
                 {p.years}
               </span>
             </div>
