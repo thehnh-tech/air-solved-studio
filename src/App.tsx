@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -19,9 +20,18 @@ import SectorTertiaire from "./pages/SectorTertiaire.tsx";
 import ClimTertiaire from "./pages/ClimTertiaire.tsx";
 import ClimGrosVolumes from "./pages/ClimGrosVolumes.tsx";
 import ClimHotellerie from "./pages/ClimHotellerie.tsx";
-import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
