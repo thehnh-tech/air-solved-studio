@@ -227,7 +227,7 @@ const ContactFormSection = () => {
                     <p className="text-muted-foreground">
                       Immeuble Le Boulevard, Le boulevard principal
                       <br />
-                      Les Berges du Lac, 2070, Tunis — Tunisie
+                      Les Berges du Lac, 1053, Tunis — Tunisie
                     </p>
                   </div>
                 </div>

@@ -12,7 +12,7 @@ const Footer = () => (
            <div style={{ marginTop: 0, paddingTop: 0 }}>
               <p className="flex items-start gap-2" style={{ fontSize: '13px', fontWeight: 300 }}>
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 opacity-80" />
-                Immeuble Le Boulevard, Les Berges du Lac, 2070 Tunis
+                Immeuble Le Boulevard, Les Berges du Lac, 1053 Tunis
               </p>
 
               <div style={{ marginTop: '12px' }}>
