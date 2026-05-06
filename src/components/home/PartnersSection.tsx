@@ -51,8 +51,8 @@ const PartnersSection = () => (
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05 }}
-            style={{ width: 180, height: 90, padding: 15 }}
-            className="bg-white rounded-xl flex items-center justify-center shadow-sm border border-border hover:shadow-md hover:border-brand-light/30 transition-all"
+            style={{ width: 180, height: 90, padding: 15, backgroundColor: "#FFFFFF" }}
+            className="rounded-xl flex items-center justify-center shadow-sm border border-border hover:shadow-md hover:border-brand-light/30 transition-all"
           >
             <img src={p.logo} alt={`${p.name} logo`} className="max-w-full max-h-full object-contain" />
           </motion.div>
