@@ -105,11 +105,9 @@ const PartnersGrid = () => (
                 <img src={p.logo} alt={`${p.name} logo`} className="max-w-full max-h-full object-contain" />
               </div>
               <div className="flex-1">
+                <h3 className="text-xl font-bold text-primary font-heading">{p.name}</h3>
                 <p className="text-secondary font-medium text-sm">{p.tagline}</p>
               </div>
-              <span className="text-xs bg-secondary/10 text-secondary px-3 py-1 rounded-full font-medium whitespace-nowrap">
-                {p.years}
-              </span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">{p.desc}</p>
             <p className="text-xs text-muted-foreground">
