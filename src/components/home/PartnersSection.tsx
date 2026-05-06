@@ -43,7 +43,7 @@ const PartnersSection = () => (
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+      <div className="flex flex-wrap justify-center gap-6 mb-12">
         {partners.map((p, i) => (
           <motion.div
             key={p.name}
@@ -51,9 +51,10 @@ const PartnersSection = () => (
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05 }}
-            className="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-border hover:shadow-md hover:border-brand-light/30 transition-all"
+            style={{ width: 180, height: 90, padding: 15 }}
+            className="bg-white rounded-xl flex items-center justify-center shadow-sm border border-border hover:shadow-md hover:border-brand-light/30 transition-all"
           >
-            <img src={p.logo} alt={`${p.name} logo`} className="h-[60px] w-auto object-contain" />
+            <img src={p.logo} alt={`${p.name} logo`} className="max-w-full max-h-full object-contain" />
           </motion.div>
         ))}
       </div>
