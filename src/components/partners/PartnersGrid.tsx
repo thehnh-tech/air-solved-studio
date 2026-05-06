@@ -98,8 +98,11 @@ const PartnersGrid = () => (
             className="bg-background rounded-xl p-8 border border-border"
           >
             <div className="flex items-start gap-4 mb-4">
-              <div className="h-[60px] px-3 rounded-lg bg-white flex items-center justify-center shrink-0 border border-border">
-                <img src={p.logo} alt={`${p.name} logo`} className="h-[44px] w-auto object-contain" />
+              <div
+                style={{ width: 180, height: 90, padding: 15 }}
+                className="rounded-lg bg-white flex items-center justify-center shrink-0 border border-border"
+              >
+                <img src={p.logo} alt={`${p.name} logo`} className="max-w-full max-h-full object-contain" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-primary font-heading">{p.name}</h3>
