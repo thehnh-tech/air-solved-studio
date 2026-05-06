@@ -11,7 +11,7 @@ const tabs = [
     groups: [
       {
         title: "Hôpitaux & Instituts",
-        clients: ["Institut Pasteur"],
+        clients: ["Institut Pasteur", "Hopital Mahmoud Matri", "Hopital Aziza Othmena", "Hopital Mongi Slim", "Hopital Bechir Hamza d'Enfants", "EPS Charles Nicolle", "Hopital Les Grands Brules", "Hopital Abderrahmen Mami", "Hopital Ophtalmologie", "Hopital Rabta Cardio Vasculaire", "Hopital Militaire Principal d'Instruction de Tunis", "Hopital Amen Bizerte", "Hopital Tahar Maamouri", "Hopital Menzel Temime", "Hopital Zaghouan", "Hopital Regional de Jandouba", "Hopital Enfidha", "Hopital Farhat Hached", "Hopital Fatouma Bourguiba", "Hopital El Aghalba", "Hopital Tahar Sfar", "Hopital Hedi Chaker", "Hopital Regional de Kerkennah", "Hopital Sidi Bouzid", "Hopital Reguebe", "Hopital Meknessi", "Hopital El Hamma", "Hopital Militaire Gabes", "Hopital Regional de Kebili", "Hopital Kasserine", "Hopital Thala", "Hopital Mednine", "Hopital Regional de Zarzis", "Hopital Sadok Mkkadem", "Hopital Beydha", "Institut Mohamed Kassab", "Institut de la Nutrition", "Institut National de Neurologie"],
       },
       {
         title: "Cliniques & Polycliniques",
