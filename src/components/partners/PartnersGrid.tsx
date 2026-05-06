@@ -97,7 +97,7 @@ const PartnersGrid = () => (
             transition={{ duration: 0.5, delay: (i % 2) * 0.15 }}
             className="bg-background rounded-xl p-8 border border-border"
           >
-            <div className="flex items-start gap-4 mb-4">
+            <div className="flex items-center gap-4 mb-4">
               <div
                 style={{ width: 180, height: 90, padding: 15, backgroundColor: "#FFFFFF" }}
                 className="rounded-lg flex items-center justify-center shrink-0 border border-border"
