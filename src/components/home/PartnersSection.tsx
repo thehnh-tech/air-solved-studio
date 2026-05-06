@@ -1,8 +1,27 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import camfilLogo from "@/assets/partners/camfil.png";
+import vertivLogo from "@/assets/partners/vertiv.png";
+import troxLogo from "@/assets/partners/trox.png";
+import wolfLogo from "@/assets/partners/wolf.png";
+import muntersLogo from "@/assets/partners/munters.png";
+import mitsubishiLogo from "@/assets/partners/mitsubishi.png";
+import tecnairLogo from "@/assets/partners/tecnair.png";
+import danthermLogo from "@/assets/partners/dantherm.png";
+import lennoxLogo from "@/assets/partners/lennox.png";
 
-const partners = ["Camfil", "Vertiv", "TROX", "Wolf", "Munters", "Mitsubishi", "Tecnair LV", "Dantherm"];
+const partners = [
+  { name: "Camfil", logo: camfilLogo },
+  { name: "Vertiv", logo: vertivLogo },
+  { name: "TROX", logo: troxLogo },
+  { name: "Wolf", logo: wolfLogo },
+  { name: "Munters", logo: muntersLogo },
+  { name: "Mitsubishi Electric", logo: mitsubishiLogo },
+  { name: "Tecnair LV", logo: tecnairLogo },
+  { name: "Dantherm", logo: danthermLogo },
+  { name: "Lennox", logo: lennoxLogo },
+];
 
 const PartnersSection = () => (
   <section className="py-24 bg-brand-alt-bg">
@@ -24,17 +43,17 @@ const PartnersSection = () => (
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-12">
-        {partners.map((name, i) => (
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+        {partners.map((p, i) => (
           <motion.div
-            key={name}
+            key={p.name}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05 }}
-            className="bg-background rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-border hover:shadow-md hover:border-brand-light/30 transition-all"
+            className="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-border hover:shadow-md hover:border-brand-light/30 transition-all"
           >
-            <span className="text-primary font-bold text-lg">{name}</span>
+            <img src={p.logo} alt={`${p.name} logo`} className="h-[60px] w-auto object-contain" />
           </motion.div>
         ))}
       </div>
