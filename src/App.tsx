@@ -20,6 +20,7 @@ import SectorTertiaire from "./pages/SectorTertiaire.tsx";
 import ClimTertiaire from "./pages/ClimTertiaire.tsx";
 import ClimGrosVolumes from "./pages/ClimGrosVolumes.tsx";
 import ClimHotellerie from "./pages/ClimHotellerie.tsx";
+import SEO from "./components/SEO.tsx";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <SEO />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
