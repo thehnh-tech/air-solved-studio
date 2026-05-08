@@ -5,7 +5,6 @@ import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import {
   Select,
   SelectContent,
@@ -51,12 +50,28 @@ const ContactFormSection = () => {
     },
   });
 
-  const onSubmit = (data: ContactFormData) => {
-    toast({
-      title: "Demande envoyée",
-      description: "Nous reviendrons vers vous dans les plus brefs délais.",
-    });
-    form.reset();
+  const onSubmit = async (data: ContactFormData) => {
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) throw new Error();
+
+      toast({
+        title: "Demande envoyée",
+        description: "Nous reviendrons vers vous dans les plus brefs délais.",
+      });
+      form.reset();
+    } catch {
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue. Veuillez réessayer ou nous contacter par email.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
