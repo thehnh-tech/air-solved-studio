@@ -210,8 +210,8 @@ const ContactFormSection = () => {
                   )}
                 />
 
-                <Button type="submit" size="lg" className="w-full sm:w-auto">
-                  Envoyer ma demande →
+                <Button type="submit" size="lg" className="w-full sm:w-auto" disabled={form.formState.isSubmitting}>
+                  {form.formState.isSubmitting ? "Envoi en cours…" : "Envoyer ma demande →"}
                 </Button>
 
                 <p className="text-xs text-muted-foreground">
